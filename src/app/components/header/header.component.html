@@ -1,0 +1,65 @@
+<header class='header__wrapper'>
+	<div class='header'>
+		<div class='header__logo'>
+			<app-icon [width]='45'
+			          [height]='42'
+			          [item]='"logo"'>
+			</app-icon>
+			<p class='header__logo_font'>
+				Marico
+			</p>
+		</div>
+
+		<nav class='nav'>
+			<button class='nav__button'
+			>
+				<p class='nav__button__label'> Use Cases </p>
+				<app-icon [width]='10'
+				          [height]='6'
+				          [item]='"down-arrow"'>
+
+				</app-icon>
+			</button>
+
+			<a
+				class='nav__link'
+				routerLink='/'
+				routerLinkActive='nav__link-active'
+				[routerLinkActiveOptions]='{exact:true}'
+			>
+				About
+			</a>
+
+			<a
+				class='nav__link'
+				routerLink='/2'
+				routerLinkActive='nav__link-active'
+				[routerLinkActiveOptions]='{exact:true}'
+			>
+				Pricing
+			</a>
+
+			<a
+				class='nav__link'
+				routerLink='/1'
+				routerLinkActive='nav__link-active'
+				[routerLinkActiveOptions]='{exact:true}'
+			>
+				Blog
+			</a>
+		</nav>
+
+		<div>
+			<a class='nav__link'
+			   routerLink='/login'>
+				Login
+			</a>
+			<a class='button__sign-up'
+			   routerLink='/signup'>
+				Sign Up
+			</a>
+		</div>
+
+	</div>
+</header>
+
