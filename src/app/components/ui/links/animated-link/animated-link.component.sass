@@ -1,0 +1,16 @@
+@import "src/app/styles/vars"
+@import "src/app/styles/mixins"
+
+.nav
+	&__link
+		@include link
+		font-size: 20px
+		font-weight: 500
+		margin-right: 39px
+
+		&-active
+			color: $active-link-color
+			pointer-events: none
+
+			&:hover
+				opacity: 1

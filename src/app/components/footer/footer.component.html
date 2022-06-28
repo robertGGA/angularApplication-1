@@ -1,1 +1,28 @@
-<p>footer works!</p>
+<footer class='footer__wrapper'>
+	<div class='footer__logo_block'>
+		<span class='footer__logo'>
+			<app-icon [width]='48'
+			          [height]='53'
+			          [item]='"logo"'>
+			</app-icon>
+			<p class='footer__logo_font'>
+				Marico
+			</p>
+		</span>
+		<p class='footer__logo_block__subtitle'>info@marico.co</p>
+	</div>
+
+	<nav class='footer__nav'>
+		<app-animated-link path='/about'
+		                   [name]='"About"'></app-animated-link>
+
+		<app-animated-link path='/pricing'
+		                   [name]='"Pricing"'></app-animated-link>
+
+		<app-animated-link path='/blog'
+		                   [name]='"Blog"'></app-animated-link>
+
+		<app-animated-link path='/login'
+		                   [name]='"Login"'></app-animated-link>
+	</nav>
+</footer>

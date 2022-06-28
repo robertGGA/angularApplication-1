@@ -5,55 +5,39 @@
 			          [height]='42'
 			          [item]='"logo"'>
 			</app-icon>
-			<p class='header__logo_font'>
+			<a routerLink='' class='header__logo_font'>
 				Marico
-			</p>
+			</a>
 		</div>
 
 		<nav class='nav'>
 			<button class='nav__button'
+			        [@linkHovered]='hovered'
+			        (mouseenter)='hovered = "end"'
+			        (mouseleave)='hovered = "start"'
 			>
 				<p class='nav__button__label'> Use Cases </p>
-				<app-icon [width]='10'
+				<app-icon [width]='11'
 				          [height]='6'
-				          [item]='"down-arrow"'>
+				          [item]='"down-arrow"'
+				          [fill]='"white"'>
 
 				</app-icon>
 			</button>
 
-			<a
-				class='nav__link'
-				routerLink='/'
-				routerLinkActive='nav__link-active'
-				[routerLinkActiveOptions]='{exact:true}'
-			>
-				About
-			</a>
+			<app-animated-link path='/about'
+			                   [name]='"About"'></app-animated-link>
 
-			<a
-				class='nav__link'
-				routerLink='/2'
-				routerLinkActive='nav__link-active'
-				[routerLinkActiveOptions]='{exact:true}'
-			>
-				Pricing
-			</a>
+			<app-animated-link path='/pricing'
+			                   [name]='"Pricing"'></app-animated-link>
 
-			<a
-				class='nav__link'
-				routerLink='/1'
-				routerLinkActive='nav__link-active'
-				[routerLinkActiveOptions]='{exact:true}'
-			>
-				Blog
-			</a>
+			<app-animated-link path='/blog'
+			                   [name]='"Blog"'></app-animated-link>
 		</nav>
 
 		<div>
-			<a class='nav__link'
-			   routerLink='/login'>
-				Login
-			</a>
+			<app-animated-link path='/login'
+			                   [name]='"Login"'></app-animated-link>
 			<a class='button__sign-up'
 			   routerLink='/signup'>
 				Sign Up

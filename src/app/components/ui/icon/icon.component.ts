@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
 @Component({
   selector: 'app-icon',
@@ -10,6 +10,7 @@ export class IconComponent {
 	@Input() width!: number;
 	@Input() height!: number;
 	@Input() item: string = '';
+	@Input() fill?: string = 'none'
 
 
 	getPath() {

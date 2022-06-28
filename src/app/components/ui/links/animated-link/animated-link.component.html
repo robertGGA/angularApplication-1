@@ -1,0 +1,12 @@
+<a
+	class='nav__link'
+	[routerLink]='path'
+	routerLinkActive='nav__link-active'
+	[routerLinkActiveOptions]='{exact:true}'
+
+	[@linkHovered]='hovered'
+	(mouseenter)="hovered = 'end'"
+	(mouseleave)="hovered = 'start'"
+>
+	{{name}}
+</a>

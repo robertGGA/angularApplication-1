@@ -1,0 +1,42 @@
+@import "src/app/styles/mixins.sass"
+@import "src/app/styles/vars.sass"
+
+.footer
+
+	&__wrapper
+		max-width: $max-width
+		margin: 0 auto
+		display: flex
+		flex-direction: row
+		align-items: center
+		padding-bottom: 96px
+		justify-content: space-between
+
+	&__logo
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+
+		&_font
+			margin-left: 17px
+			font-weight: 800
+			color: white
+			font-size: 42px
+
+		&_block
+			display: flex
+			flex-direction: column
+
+			&__subtitle
+				color: $dark-grey-color
+				font-size: 27px
+				font-weight: 400
+
+	&__nav
+		display: flex
+		flex-direction: row
+		align-items: center
+
+		&__link
+
+
