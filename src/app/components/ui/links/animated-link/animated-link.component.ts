@@ -19,7 +19,6 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 export class AnimatedLinkComponent {
 	@Input() path = '';
 	@Input() name = '';
-
 	hovered = 'start';
 
 }

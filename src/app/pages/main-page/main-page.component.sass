@@ -1,0 +1,116 @@
+@import "src/app/styles/mixins.sass"
+@import "src/app/styles/vars.sass"
+
+@mixin undertitle-text
+	font-weight: 300
+	font-size: 22px
+	color: $dark-grey-color
+	text-align: center
+
+.h2-title
+	@include second-size-title
+
+.p-undertitle
+	@include undertitle-text
+
+	&-content
+		@extend .p-undertitle
+		max-width: 929px
+		margin: 0 auto
+
+
+.main
+
+	&__wrapper
+		max-width: $max-width
+		margin: 0 auto
+
+	&__big-title
+		text-align: center
+		font-weight: 700
+		font-size: 92px
+		margin-top: 88px
+
+	&__title_gradient
+		@extend .main__big-title
+		margin: 0
+		background: -webkit-linear-gradient(180deg, #FE6783 1.9%, #FFBF84 97.1%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+
+	&__start-block
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		max-width: 694px
+		margin: 0 auto
+		margin-top: 132px
+
+		&__title
+			font-weight: 500
+			font-size: 37px
+			text-align: center
+
+	&__buttons-container
+		width: 100%
+		display: flex
+		justify-content: space-evenly
+		margin-top: 50px
+
+	&__creators-line
+		display: flex
+		flex-direction: row
+		align-items: center
+		margin-top: 20px
+		font-size: 25px
+
+		&_text
+			color: $dark-grey-color
+
+	b
+		margin-left: 10px
+		margin-right: 9px
+
+.why-block
+	@extend .main__start-block
+	margin-top: 188px
+	max-width: 100%
+
+	&__subblocks
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		margin-top: 64px
+
+		p
+			text-align: center
+			font-weight: 600
+			font-size: 24px
+
+		p:last-child
+			margin-top: 10px
+			color: $dark-grey-color
+			font-weight: 400
+			font-size: 17px
+
+.step-font
+	font-size: 22px
+	font-weight: 500
+	color: $step-blue-color
+	text-align: center
+	margin-top: 162px
+	text-transform: uppercase
+
+.single-button__container
+	display: flex
+	justify-content: center
+	margin-top: 34px
+
+
+
+
+
+
+

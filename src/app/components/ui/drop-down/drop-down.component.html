@@ -1,0 +1,22 @@
+<button class='drop-down__button'
+        [@linkHovered]='hovered'
+        (mouseenter)='hovered = "end"'
+        (mouseleave)='hovered = "start"'
+        (click)='swapDropDown()'
+>
+	<p class='drop-down__button__label'> Use Cases </p>
+	<app-icon [width]='11'
+	          [height]='6'
+	          [item]='"down-arrow"'
+	          [fill]='"white"'>
+
+	</app-icon>
+</button>
+
+<ng-container *ngIf='isOpened'>
+	<div class='drop-down__container' [@dropDownMenu]>
+		<div class="menu-item" *ngFor="let item of [1, 2, 3, 4, 5]; let i = index">
+			Menu Item {{ i }}
+		</div>
+	</div>
+</ng-container>

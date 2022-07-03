@@ -1,1 +1,30 @@
-<p>login-page works!</p>
+<h2 class='login__title'>
+	Log In
+</h2>
+
+<p class='login__subtitle'>
+	Login into existing account.
+</p>
+<form [formGroup]='formGroup'
+      class='login__form-container'>
+	<app-default-input [formName]='"login"'
+	                   [type]='"text"'
+	                   [label]='"Username"'
+	                   formControlName='login'>
+	</app-default-input>
+	<app-default-input formControlName='password'
+	                   [type]='"password"'
+	                   [label]='"Password"'>
+	</app-default-input>
+	<app-submit-button></app-submit-button>
+</form>
+
+
+
+<h2 class='login__title'>
+	Or
+</h2>
+
+<p class='login__subtitle'>
+	Log in with...
+</p>

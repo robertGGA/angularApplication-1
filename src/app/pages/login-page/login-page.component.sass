@@ -1,0 +1,27 @@
+@import "src/app/styles/mixins.sass"
+@import "src/app/styles/vars.sass"
+
+.login
+
+	&__title
+		@include second-size-title
+		margin-top: 63px
+
+	&__subtitle
+		font-size: 24px
+		font-weight: 300
+		text-align: center
+
+	&__form-container
+		width: 100%
+		max-width: 1118px
+		margin: 0 auto
+		margin-top: 35px
+		display: flex
+		align-items: center
+		flex-direction: column
+
+.input
+	&__wrapper
+		display: flex
+		position: relative

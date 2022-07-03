@@ -1,0 +1,29 @@
+@import "src/app/styles/mixins.sass"
+@import "src/app/styles/vars.sass"
+
+
+.drop-down
+
+	&__button
+		display: flex
+		flex-direction: row
+		align-items: center
+		background: none
+		border: none
+		margin-right: 19px
+		@include link
+
+		&__label
+			font-size: 20px
+			font-weight: 500
+			margin-right: 9px
+			color: inherit
+
+	&__container
+		position: absolute
+		left: 13px
+		top: 25px
+		width: 104px
+
+
+

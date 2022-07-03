@@ -5,25 +5,15 @@
 			          [height]='42'
 			          [item]='"logo"'>
 			</app-icon>
-			<a routerLink='' class='header__logo_font'>
+			<a routerLink=''
+			   class='header__logo_font'>
 				Marico
 			</a>
 		</div>
 
 		<nav class='nav'>
-			<button class='nav__button'
-			        [@linkHovered]='hovered'
-			        (mouseenter)='hovered = "end"'
-			        (mouseleave)='hovered = "start"'
-			>
-				<p class='nav__button__label'> Use Cases </p>
-				<app-icon [width]='11'
-				          [height]='6'
-				          [item]='"down-arrow"'
-				          [fill]='"white"'>
 
-				</app-icon>
-			</button>
+			<app-drop-down></app-drop-down>
 
 			<app-animated-link path='/about'
 			                   [name]='"About"'></app-animated-link>

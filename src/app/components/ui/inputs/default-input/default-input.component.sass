@@ -1,0 +1,41 @@
+@import "src/app/styles/mixins.sass"
+@import "src/app/styles/vars.sass"
+
+.input
+	background: none
+	border: none
+
+	border-bottom: 1px solid $light-grey-color
+	color: white
+	outline: none
+	width: 387px
+
+	font-size: 22px
+	padding-bottom: 5px
+
+	&__wrapper
+		display: flex
+		position: relative
+		margin-top: 35px
+
+		& input:focus ~ .floating-label, & input:valid ~ label
+			top: -28px
+			left: 0
+
+
+	&__image
+		position: absolute
+		left: 15px
+
+		svg
+			position: absolute
+			left: 15px
+
+.floating-label
+	position: absolute
+	top: -6px
+	left: 0
+	pointer-events: none
+	transition: 0.3s
+	color: $light-grey-color
+
